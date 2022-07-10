@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {Book} from "./model/books.model";
 import { Observable, throwError } from 'rxjs';
 import { catchError, map, retry } from 'rxjs/operators';
+import { environment } from "src/environments/environment";
 
 
 export const books: Book[] = [
@@ -17,7 +18,7 @@ export const books: Book[] = [
 
 export class BooksService {
 
-  private url = 'https://localhost:44382/api/bookstore';  // URL to web api
+  private url = 'https://sheet.best/api/sheets/'+environment.apiKey;  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -31,9 +32,9 @@ export class BooksService {
     // }
 
     getBooks() {
-      return this.http.get(this.url)
 
-  
+      return this.http.get(this.url);
+    
     }
 
 }
