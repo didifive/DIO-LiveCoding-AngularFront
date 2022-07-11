@@ -2,10 +2,10 @@
       <img class="bd-placeholder-img card-img-top" width="100%"   src='{{ "assets/images/" + livro.img + ".jpg" }}'>
 
       <div class="card-body">
-        <p class="card-text">{{ livro.name }}</p>
-        <p class="card-text">{{ livro.category }}</p>
-        <p class="card-text">{{ livro.quantity }}</p>
-        <p class="card-text">{{livro.price | currency:'BRL'}}</p>
+        <p class="card-text">Título: {{ livro.name }}</p>
+        <p class="card-text">Categoria: {{ livro.category }}</p>
+        <p class="card-text">Disponível: {{ livro.quantity }}</p>
+        <p class="card-text">Valor: {{livro.price | currency:'BRL'}}</p>
 
 
 

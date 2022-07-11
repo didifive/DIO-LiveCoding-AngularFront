@@ -12,7 +12,8 @@ import { FiltersComponent } from './components/book-cart/filters/filters.compone
 
 import { ProductItemComponent } from './components/book-cart/product-list/product-item/product-item.component';
 import { HttpClientModule } from '@angular/common/http';
-import {BooksService} from './components/book-cart/product-list/product-list.service';
+import { BooksService } from './components/book-cart/product-list/product-list.service';
+import { SobreComponent } from './components/sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {BooksService} from './components/book-cart/product-list/product-list.ser
     BookCartComponent,
     ProductListComponent,
     FiltersComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
